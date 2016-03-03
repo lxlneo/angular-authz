@@ -1,6 +1,6 @@
 'use strict';
-    angular.module('angular-authz', []);
-    angular.module('angular-authz').factory('permissionService', function () {
+    angular.module('neo-angular-authz', []);
+    angular.module('neo-angular-authz').factory('permissionService', function () {
          var permission = {};
         permission.inited = false;
         permission.data  = new Map();
@@ -70,7 +70,7 @@
         return permission;
     });
 
-    angular.module('angular-authz').directive('hasPermission', [
+    angular.module('neo-angular-authz').directive('hasPermission', [
         'permissionService',
         function (permissionService) {
             return {
