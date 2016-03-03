@@ -1,5 +1,4 @@
-(function () {
-    'use strict';
+'use strict';
     angular.module('angular-authz', []);
     angular.module('angular-authz').factory('permissionService', function () {
          var permission = {};
@@ -88,4 +87,3 @@
             };
         }
     ]);
-}());
